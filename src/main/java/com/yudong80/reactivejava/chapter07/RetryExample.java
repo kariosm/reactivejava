@@ -80,9 +80,9 @@ public class RetryExample {
 	
 	public static void main(String[] args) { 
 		RetryExample demo = new RetryExample();
-//		demo.retry5();
-//		demo.retryWithDelay();
-//		demo.retryUntil();
-//		demo.retryWhen();
+		//demo.retry5();
+		//demo.retryWithDelay();
+		//demo.retryUntil();
+		demo.retryWhen();
 	}
 }

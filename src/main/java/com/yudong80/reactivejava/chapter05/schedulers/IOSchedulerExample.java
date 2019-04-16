@@ -19,6 +19,7 @@ public class IOSchedulerExample {
 				.subscribeOn(Schedulers.io());
 		
 		source.subscribe(Log::i);
+		source.subscribe(Log::i);
 		CommonUtils.sleep(500);
 		CommonUtils.exampleComplete();
 	}

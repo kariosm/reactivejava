@@ -128,8 +128,8 @@ public class DoOnExample {
 //		demo.withError();
 //		demo.doOnEach();
 //		demo.doOnEachObserver();
-		demo.doOnSubscribeAndDispose();
-		demo.doOnLifecycle();
-//		demo.doOnTerminate();
+//		demo.doOnSubscribeAndDispose();
+//		demo.doOnLifecycle();
+		demo.doOnTerminate();
 	}
 }

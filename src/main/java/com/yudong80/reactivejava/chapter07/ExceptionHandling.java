@@ -113,11 +113,11 @@ public class ExceptionHandling {
 	
 	public static void main(String[] args) { 
 		ExceptionHandling demo = new ExceptionHandling();
-		demo.cannotCatch();
+//		demo.cannotCatch();
 //		demo.onErrorReturn();
 //		demo.onError();
 //		demo.onErrorReturnItem();
-//		demo.onErrorResumeNext();
+		demo.onErrorResumeNext();
 	}
 	
 }

@@ -66,7 +66,7 @@ public class SampleExample implements MarbleDiagram{
 	
 	public static void main(String[] args) { 
 		SampleExample demo = new SampleExample();
-		demo.marbleDiagram();
-//		demo.emitLast();
+		// demo.marbleDiagram();
+		demo.emitLast();
 	}
 }

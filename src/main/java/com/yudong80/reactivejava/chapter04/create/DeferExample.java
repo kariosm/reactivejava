@@ -53,7 +53,7 @@ public class DeferExample implements MarbleDiagram{
 	
 	public static void main(String[] args) { 
 		DeferExample demo = new DeferExample();
-		demo.marbleDiagram();
+		//demo.marbleDiagram();
 		demo.notDeferred();
 	}
 }

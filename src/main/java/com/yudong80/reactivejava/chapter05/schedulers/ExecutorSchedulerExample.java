@@ -1,6 +1,7 @@
 package com.yudong80.reactivejava.chapter05.schedulers;
 
 import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import com.yudong80.reactivejava.common.CommonUtils;
@@ -15,7 +16,7 @@ public class ExecutorSchedulerExample {
 		
 		String[] data = {"RED", "GREEN", "BLUE"};
 		Observable<String> source = Observable.fromArray(data);
-		Executor executor = Executors.newFixedThreadPool(THREAD_NUM);
+		ExecutorService executor = Executors.newFixedThreadPool(THREAD_NUM);
 		
 		source.subscribeOn(Schedulers.from(executor))
 				.subscribe(Log::i);
@@ -23,6 +24,7 @@ public class ExecutorSchedulerExample {
 				.subscribe(Log::i);
 		CommonUtils.sleep(500);		
 		CommonUtils.exampleComplete();
+		executor.shutdown();
 	}
 	
 	public static void main(String[] args) { 

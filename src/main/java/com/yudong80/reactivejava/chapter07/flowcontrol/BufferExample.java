@@ -78,8 +78,8 @@ public class BufferExample implements MarbleDiagram{
 	
 	public static void main(String[] args) { 
 		BufferExample demo = new BufferExample();
-		demo.marbleDiagram();
-//		demo.bufferSkip();
+		//demo.marbleDiagram();
+		demo.bufferSkip();
 	}
 }
 

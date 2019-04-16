@@ -25,7 +25,7 @@ public class NewThreadSchedulerExample {
 			.map(data -> "##" + data + "##")
 			.subscribeOn(Schedulers.newThread())
 			.subscribe(Log::i);		
-		CommonUtils.sleep(500);
+		//CommonUtils.sleep(500);
 	}
 	
 	public static void main(String[] args) { 
